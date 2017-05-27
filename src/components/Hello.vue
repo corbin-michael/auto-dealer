@@ -1,16 +1,16 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-      <p>Test of git</p>
+   <div class="hello">
+      <h1>{{ msg }}</h1>
+
       <p>Your Name: {{name}}</p>
       <input type="text" v-model="name" />
-      <p :click="submitName">Submit</p>
+      <button @click="submitName">Submit</button>
 
 
-    <ul>
-      <li v-for="user in allUsers">{{user.name}}</li>
-    </ul>
-  </div>
+      <ul>
+         <li v-for="user in allUsers">{{user.name}}</li>
+      </ul>
+   </div>
 </template>
 
 <script>
@@ -31,9 +31,10 @@ export default {
   },
   methods: {
     submitName: function() {
-      users.set({
-        user: this.name
-      });
+      console.log("Clicked");
+      this.$firebaseRefs.allUsers.push({
+         name: this.name
+      })
       this.name = "";
     }
   }
