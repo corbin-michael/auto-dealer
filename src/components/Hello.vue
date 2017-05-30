@@ -2,13 +2,14 @@
    <div class="hello">
       <h1>{{ msg }}</h1>
 
+
       <p>Your Name: {{name}}</p>
       <input type="text" v-model="name" />
       <button @click="submitName">Submit</button>
 
 
-      <ul>
-         <li v-for="user in allUsers">{{user.name}}</li>
+      <ul class="list-group">
+         <li class="list-group-item" v-for="user in allUsers">{{user.name}}</li>
       </ul>
    </div>
 </template>
@@ -42,22 +43,6 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;
-}
+<style lang="scss">
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>
