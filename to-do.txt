@@ -1,0 +1,13 @@
+Features to add
+
+Car Detail Page
+1) Features/Options/Specs/Warranty info
+2) Estimate your monthly payment
+3) Interest form
+4) Customers also looked at...
+5) Quick car details (price,gas, color, drive type, body style, etc.)
+
+
+
+
+Features Completed

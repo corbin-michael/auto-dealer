@@ -9,6 +9,8 @@ import App from './App'
 import router from './router'
 
 Vue.use(VueFire)
+// Vue.use(Editor)
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
